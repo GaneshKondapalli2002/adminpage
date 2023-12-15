@@ -1,0 +1,22 @@
+<div class="example mb-3">
+    <nav variant="tabs">
+      <nav-item>
+        <a [active]="true" [fragment]="fragment" [routerLink]="[]" cNavLink>
+          <svg cIcon class="me-2" name="cilMediaPlay"></svg>
+          Preview
+        </a>
+      </nav-item>
+      <nav-item>
+        <a [href]="href" cNavLink target="_blank">
+          <svg cIcon class="me-2" name="cilCode"></svg>
+          Code
+        </a>
+      </nav-item>
+    </nav>
+    <div class="tab-content rounded-bottom">
+      <div class="tab-pane active show p-3 preview fade">
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </div>
+  
